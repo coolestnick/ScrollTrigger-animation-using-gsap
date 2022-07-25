@@ -1,9 +1,14 @@
 import gsap from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
+import LocomotiveScroll from 'locomotive-scroll';
+import Paragraph from './paragraph';
 import './App.css';
 
 gsap.registerPlugin(ScrollTrigger);
+
+const scroll = new LocomotiveScroll();
+
 
 function App() {
   return (
@@ -12,9 +17,9 @@ function App() {
         <div className="section">
           <div className="section-wrapper">
             <div className="content">
-              <h1 className="hero-header h-1">the great</h1>
-              <h1 className="hero-header h-2">outdoors</h1>
-              <h1 className="hero-header h-3">volume</h1>
+              <h1 className="hero-header h-1">THE GREAT</h1>
+              <h1 className="hero-header h-2">OUTDOORS</h1>
+              <h1 className="hero-header h-3">VOLUMES</h1>
             </div>
             <div className="pin-wrapper">
               <div className="image-wrapper" id="heroImage">
@@ -27,19 +32,7 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="section copy">
-        <div className="section-wrapper">
-          <div className="content">
-            <p>
-              It is a long established fact that a reader will be distracted by
-              the readable content of a page when looking at its layout. The
-              point of using Lorem Ipsum is that it has a more-or-less normal
-              distribution of letters, as opposed to using 'Content here,
-              content here', making it look like readable English.
-            </p>
-          </div>
-        </div>
-      </div>
+      <Paragraph />
     </div>
   );
 }

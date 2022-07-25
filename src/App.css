@@ -1,4 +1,13 @@
+@import url(//db.onlinewebfonts.com/c/1c87f20c55baa7eccc98b8603b5eecea?family=Grifinito+L);
+
 *{
+    background: #e1dcce;
+  color: #464138;
+  font-family: "Grifinito L";
+  font-weight: lighter;
+  font-size: larger;
+  
     margin: 0;
     padding: 0;
+
 }

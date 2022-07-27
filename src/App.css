@@ -1,12 +1,9 @@
 @import url(//db.onlinewebfonts.com/c/1c87f20c55baa7eccc98b8603b5eecea?family=Grifinito+L);
 
-*{
+html,body{
     background: #e1dcce;
   color: #464138;
   font-family: "Grifinito L";
-  
-  
-  
     margin: 0;
     padding: 0;
 
@@ -42,7 +39,7 @@
 
 .content{
     width: 100%;
-    max-width: 840px;
+    max-width: 1200px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -72,4 +69,7 @@ h1{
     height:100%;
     object-fit: cover;
     
+}
+.text{
+    font-size: 60px;
 }
